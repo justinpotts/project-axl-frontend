@@ -1,0 +1,122 @@
+#tabzilla {
+  float: right;
+  position: relative;
+}
+#tabzilla a {
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url('../media/img/tabzilla-static.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 37px;
+  position: relative;
+  width: 147px;
+  z-index: 2;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+  #tabzilla a {
+    background-image: url('../media/img/tabzilla-static-high-res.png');
+    -webkit-background-size: 147px 37px;
+    background-size: 147px 37px;
+  }
+}
+#tabzilla:before {
+  background-color: transparent;
+  content: '';
+  display: block;
+  height: 26px;
+  left: 28px;
+  position: absolute;
+  top: 0;
+  width: 88px;
+  z-index: 1;
+}
+html[dir='rtl'] #tabzilla {
+  float: left;
+}
+
+.add-on-title {
+  color: white;
+  font-family: Open Sans;
+  font-size: 36px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.download-completion {
+  color: white;
+  font-family: Open Sans;
+  font-size: 36px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 44px;
+}
+
+.install-instructions {
+  color: white;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 44px;
+}
+
+h1 {
+  color: white;
+	font-family: Open Sans;
+	font-size: 48px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 44px;
+}
+h3 {
+  color: white;
+	font-family: Open Sans;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+	line-height: 15.4px;
+}
+p {
+	font-family: Open Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: Open Sans;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: Open Sans;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5667px;
+}
+
+.vertical-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+.center-text {
+  text-align: center;
+}
