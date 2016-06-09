@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Download - Firefox Add-on Generator</title>
+    <title>Test Add-on - Firefox Add-on Generator</title>
 
     <!-- Style Sheets -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,9 +27,10 @@
     </div>
 
     <div class="container" style="text-align: center;">
-      <div class="vertical-center">
-        <p><span class="add-on-title">{{ addon_name}}</span><span class="download-completion">&nbsp;is being downloaded.</span></p>
-        <p><span class="install-instructions">To install, open the signed .xpi file in Firefox and install. No restart required.</span></p>
+      <div id="indicator" class="vertical-center">
+        <p><img src="media/img/error.jpg"></p>
+        <p><span class="download-completion">Something's gone wrong!</span></p>
+        <p><span class="install-instructions">Check to ensure the add-on is installed in about:addons, or try reinstalling it.</span></p>
       </div>
     </div>
 
